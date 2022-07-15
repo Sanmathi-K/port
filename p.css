@@ -6,6 +6,22 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  
+}
+::-webkit-scrollbar-track {
+  background:white;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: linear-gradient(rgb(239, 135, 216),rgb(224, 134, 242));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(rgb(250, 96, 217),rgb(219, 77, 248));
+}
 html{
   scroll-behavior: smooth;
 }
@@ -15,14 +31,14 @@ html,body
   height:100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 section{
   padding: 100px 0;
 }
 .max-width{
   max-width: 1300px;
-  padding: 0 30px;
+  padding: 0 80px;
   margin: auto;
 } 
 .about .about-content,
@@ -40,7 +56,6 @@ section{
     width: 100%;
     padding:30px 0;
     transition: all 0.3s ease;
-    
     z-index: 999; 
 }
 .navbar.sticky
@@ -58,7 +73,7 @@ section{
     color:white;
     font-size: 35px;
     font-weight: 600;
-    font-family: 'ubuntu',sans-serif;
+    font-family: 'poppins',sans-serif;
 }
 .navbar .menu li{
     list-style: none;
@@ -156,8 +171,87 @@ section{
         color: white;
         margin: -3px ;
     }
-    
+    /*about*/
+    /*about*/
+ .left1 {
+   
+  padding: 22px;
+  float: left;
+  width: 45%; 
+  padding-left: 4em;
+  
  
+}
+
+
+.right1 {
+  
+  padding-top: 1em;
+  
+  float: left;
+  width: 55%; 
+  padding-right: 2em;
+  
+}
+.right1 .txt 
+{
+    padding-right: 2em;
+    font-family: 'poppins';
+    font-size: 18px;
+    padding-top: 4em;
+  
+}
+  .aboutce .txt1 
+  {
+      font-size: 30px;
+      text-align: center;
+  }
+ 
+.left1 img
+{
+  width:370px;
+  height:300px;
+  padding-left: 3em;
+  padding-top: 2em;
+}
+    
+    @media (max-width: 992px){
+      .btn{
+          display: block;
+          z-index: 999;
+      }
+      .menu-btn i.active:before{
+          content: "\f00d";
+      }
+      .navbar .menu{
+          position: fixed;
+          height: 100vh;
+          width: 80%;
+          left: -100%;
+          top: 0;
+          background: rgb(115, 73, 154);
+          text-align: center;
+          padding-top: 80px;
+          transition: all 0.3s ease;
+      }
+      .navbar .menu.active{
+          left: 0;
+      }
+      .navbar .menu li{
+          display: block;
+      }
+      .navbar .menu li a{
+          display: inline-block;
+          margin: 20px 0;
+          font-size: 25px;
+      }
+      .navbar .menu li a:hover{
+          display: inline-block;
+          margin: 20px 0;
+          font-size: 25px;
+          color:black;
+      }
+  }
  
   
   
