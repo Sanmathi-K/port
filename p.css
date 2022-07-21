@@ -407,7 +407,7 @@ section .title::before{
 /*projects*/
 
 .project .carousel .card{
-  background:linear-gradient(rgb(171, 88, 248) 70%,rgb(247, 86, 217) );
+  background:linear-gradient(rgb(171, 88, 248) 70%,  rgb(115, 73, 154));
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
@@ -442,7 +442,7 @@ section .title::before{
   width: 330px;
   object-fit: fill;
   
-  border: 5px solid rgb(247, 86, 217);
+  border: 5px solid rgb(164, 92, 232);
   transition: all 0.3s ease;
 }
 .project .carousel .card:hover img{
@@ -835,7 +835,7 @@ footer p
       width: 90%;
       left: -100%;
       top: 0;
-      background: rgb(115, 73, 154);
+      background: linear-gradient(144deg,rgb(164, 92, 232) 0%, rgb(186, 124, 244) 80%);
       text-align: center;
       padding-top: 80px;
       transition: all 0.3s ease;
